@@ -1,3 +1,3 @@
-# Face Detection program: 
+# Face Detection: 
 
-Facial detection program using OpenCV (cv2 )
+Facial detection program using Python and OpenCV (cv2 )
