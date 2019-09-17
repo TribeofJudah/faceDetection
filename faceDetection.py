@@ -4,16 +4,16 @@ import matplotlib.pyplot as plt
 import cvlib as cv 
 
 
-img_path = 'couple-image.jpg'
-image = cv2.imread(img_path)
+#Initiate variable for the image
+image = cv2.imread('couple-image.jpg')
 
 plt.imshow(image)
 plt.show()
 
+#Function to detect faces using cv2 
 faces, confidences = cv.detect_face(image)
 
 #Loop through detected faces and add bounding box 
-
 for face in faces:
     (startX, startY) = face[0],face[1]
     (endX,endY) = face[2],face[3]
